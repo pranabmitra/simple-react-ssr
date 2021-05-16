@@ -2,6 +2,24 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## Steps:
+```sh
+# non-SSR
+$ cd simple-react-ssr
+$ yarn start
+$ http://localhost:3000/
+
+# SSR
+$ yarn add express
+$ yarn add @babel/preset-env @babel/preset-react  @babel/register ignore-styles
+# use `hydrate` instead of `render` in the `index.js`
+# Check the 'SSR version' commit changes
+$ yarn ssr
+$ http://localhost:9001/
+```
+
+
 ## Available Scripts
 
 In the project directory, you can run:
